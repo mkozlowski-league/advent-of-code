@@ -36,7 +36,6 @@ with open("day10input.txt", 'r') as file:
         # Test all combinations up to 10
         for press_count in range(1, 11):
             combinations = generate_combinations(press_count)
-            # print(f"Testing {press_count} presses: {combinations}")
             for combo in combinations:
                 state = 0
                 for button_idx in combo:
@@ -52,18 +51,4 @@ with open("day10input.txt", 'r') as file:
             print(f"No solution <10 for target {target}")
             exit(1)
 
-
 print(total)
-
-
-
-
-
-
-
-
-        
-        # print(f"Lights: {lights}, Target: {target}")
-        # print(f"Buttons: {buttons}")
-        # print(f"Joltage: {joltage}")
-
